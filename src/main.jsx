@@ -7,6 +7,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import {NotFoundPage} from "./pages/NotFoundPage.jsx";
+import {LoginPage} from "./pages/LoginPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
         element: <div>Hello world!</div>,
         errorElement: <NotFoundPage />
     },
+    {
+        path: "auth/login",
+        element: <LoginPage />,
+        errorElement: <NotFoundPage />
+    }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
