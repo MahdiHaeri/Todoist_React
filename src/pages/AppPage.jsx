@@ -1,10 +1,14 @@
 import {Outlet} from "react-router";
+import {Helmet} from "react-helmet-async";
 
 export const AppPage = () => {
     return (
         <>
-            Hello App
+            <Helmet>
+                <title> Dashboard | Minimal UI </title>
+            </Helmet>
+            App Page
             <Outlet />
         </>
-    )
+    );
 }
