@@ -14,7 +14,6 @@ export default function DashboardLayout({children}) {
 
     return (
         <>
-            <Header onOpenNav={() => setOpenNav(true)}/>
 
             <Box
                 sx={{
@@ -24,6 +23,8 @@ export default function DashboardLayout({children}) {
                 }}
             >
                 <NavDrawer openNav={openNav} onCloseNav={() => setOpenNav(false)}/>
+
+                <Header onOpenNav={() => setOpenNav(true)}/>
 
                 <Main>
                     {children}
