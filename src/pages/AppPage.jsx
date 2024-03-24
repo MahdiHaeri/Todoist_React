@@ -5,7 +5,7 @@ export const AppPage = () => {
     return (
         <>
             <Helmet>
-                <title> Dashboard | Minimal UI </title>
+                <title> Dashboard </title>
             </Helmet>
             App Page
             <Outlet />
