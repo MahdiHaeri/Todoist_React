@@ -8,7 +8,6 @@ export const AppPage = () => {
             <Helmet>
                 <title> Dashboard </title>
             </Helmet>
-            App Page
             <DashboardLayout>
                 <Outlet />
             </DashboardLayout>
