@@ -2,26 +2,36 @@ import PropTypes from "prop-types";
 import {Drawer} from "@mui/material";
 import {NAV} from "./config-layout.js";
 import {DrawerHeader} from "./component/DrawerHeader.jsx";
+import {useEffect, useState} from "react";
 
 
-export const NavDrawer = ({openNav, onCloseNav}) => {
-    openNav = true
+export const NavDrawer = ({openNav, onToggleDrawer}) => {
+    const [drawerWidth, setDrawerWidth] = useState(openNav ? NAV.WIDTH : 0)
+
+    useEffect(() => {
+        if (openNav) {
+            setDrawerWidth(NAV.WIDTH)
+        } else {
+            setDrawerWidth(0)
+        }
+    }, [openNav])
+
     return (
         <>
             <Drawer
                 variant={"persistent"}
                 anchor={"left"}
                 open={openNav}
-                onClose={onCloseNav}
-                sx={{width: NAV.WIDTH}}
+                onClose={onToggleDrawer}
+                sx={{width: drawerWidth, transition: 'all 0.3s'}}
                 PaperProps={{
                     sx: {
-                        width: NAV.WIDTH,
+                        width: drawerWidth,
                         p: 1,
                     },
                 }}
             >
-                <DrawerHeader />
+                <DrawerHeader openNav={openNav} onToggleDrawer={onToggleDrawer}/>
             </Drawer>
         </>
     )
@@ -29,5 +39,5 @@ export const NavDrawer = ({openNav, onCloseNav}) => {
 
 NavDrawer.propTypes = {
     openNav: PropTypes.bool,
-    onCloseNav: PropTypes.func,
+    onToggleDrawer: PropTypes.func,
 };

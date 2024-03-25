@@ -3,7 +3,7 @@ import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownR
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import ViewSidebarRoundedIcon from '@mui/icons-material/ViewSidebarRounded';
 
-export const DrawerHeader = () => {
+export const DrawerHeader = ({openNav, onToggleDrawer}) => {
     return (
         <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
             <Button variant={"text"}>
@@ -14,8 +14,8 @@ export const DrawerHeader = () => {
                         <Typography variant={"body2"} fontWeight={"bold"}>
                             Mahdi
                         </Typography>
-                        <Icon sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <KeyboardArrowDownRoundedIcon />
+                        <Icon sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                            <KeyboardArrowDownRoundedIcon/>
                         </Icon>
                     </Stack>
                 </Stack>
@@ -25,7 +25,7 @@ export const DrawerHeader = () => {
                 <IconButton size={"medium"}>
                     <NotificationsRoundedIcon fontSize={"small"}/>
                 </IconButton>
-                <IconButton size={"medium"}>
+                <IconButton size={"medium"} onClick={onToggleDrawer}>
                     <ViewSidebarRoundedIcon fontSize={"small"}/>
                 </IconButton>
             </Stack>

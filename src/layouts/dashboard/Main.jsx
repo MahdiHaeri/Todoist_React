@@ -12,6 +12,7 @@ export const Main = ({children, ...other}) => {
                 minHeight: 1,
                 display: 'flex',
                 flexDirection: 'column',
+                p: 2
             }}
             {...other}
         >
