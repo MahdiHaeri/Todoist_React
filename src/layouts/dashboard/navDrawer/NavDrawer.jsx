@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import {Drawer} from "@mui/material";
-import {NAV} from "./config-layout.js";
+import {NAV} from "../config-layout.js";
 import {DrawerHeader} from "./component/DrawerHeader.jsx";
+import {DrawerListItem} from "./component/DrawerListItem.jsx";
 
 
 export const NavDrawer = ({openNav, onToggleDrawer}) => {
@@ -19,6 +20,7 @@ export const NavDrawer = ({openNav, onToggleDrawer}) => {
             }}
         >
             <DrawerHeader openNav={openNav} onToggleDrawer={onToggleDrawer}/>
+            <DrawerListItem />
         </Drawer>
     )
 }

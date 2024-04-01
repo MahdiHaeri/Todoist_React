@@ -104,20 +104,20 @@ const base = {
 export function palette() {
   return {
     ...base,
-    mode: 'light',
-    text: {
-      primary: grey[800],
-      secondary: grey[600],
-      disabled: grey[500],
-    },
-    background: {
-      paper: '#FFFFFF',
-      default: grey[100],
-      neutral: grey[200],
-    },
-    action: {
-      ...base.action,
-      active: grey[600],
-    },
+    mode: 'dark',
+    // text: {
+    //   primary: grey[800],
+    //   secondary: grey[600],
+    //   disabled: grey[500],
+    // },
+    // background: {
+    //   paper: '#FFFFFF',
+    //   default: grey[100],
+    //   neutral: grey[200],
+    // },
+    // action: {
+    //   ...base.action,
+    //   active: grey[600],
+    // },
   };
 }
