@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 export const LoginView = () => {
     return (
-        <Stack direction='column' width='100vw' height='100vh' display={"flex"} justifyContent={"start"}
+        <Stack direction='column' width='100%' height='100vh' display={"flex"} justifyContent={"start"}
                alignItems={"center"} padding={4}>
             <Stack direction='column' width='30%' height={'100%'} gap={4}>
                 <Typography variant='h4' fontWeight='bold'>

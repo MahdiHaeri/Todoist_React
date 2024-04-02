@@ -1,5 +1,6 @@
 import {Helmet} from "react-helmet-async";
 import {LoginView} from "../ui/login/LoginView.jsx";
+import {Container} from "@mui/material";
 
 export const LoginPage = () => {
     return (
@@ -8,7 +9,9 @@ export const LoginPage = () => {
                 <title> Login </title>
             </Helmet>
 
-            <LoginView />
+            <Container>
+                <LoginView />
+            </Container>
         </>
     );
 }
