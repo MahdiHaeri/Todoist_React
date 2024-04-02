@@ -4,10 +4,10 @@ import {NavLink} from "react-router-dom";
 
 export const DrawerListItem = () => {
     return (
-        <List>
+        <List disablePadding>
             {navConfig.map((item) => (
-                <ListItem key={item.title}>
-                    <ListItemButton>
+                <ListItem key={item.title} disablePadding>
+                    <ListItemButton sx={{borderRadius: 1}}>
                         <ListItemIcon>
                             {item.icon}
                         </ListItemIcon>

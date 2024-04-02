@@ -8,7 +8,7 @@ export const DrawerHeader = ({openNav, onToggleDrawer}) => {
         <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
             <Button variant={"text"}>
                 <Stack direction={"row"} alignItems={"center"} justifyContent={"center"} spacing={1}>
-                    <Avatar sx={{width: 24, height: 24}}>
+                    <Avatar sx={{width: 20, height: 20, outline: '2px solid', outlineColor: 'primary.main', outlineOffset: 1}}>
                     </Avatar>
                     <Stack direction={"row"} alignItems={"center"} justifyContent={"center"}>
                         <Typography variant={"body2"} fontWeight={"bold"}>
