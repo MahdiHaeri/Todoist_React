@@ -27,11 +27,11 @@ export const primary = {
 };
 
 export const secondary = {
-  lighter: '#EFD6FF',
-  light: '#C684FF',
-  main: '#8E33FF',
-  dark: '#5119B7',
-  darker: '#27097A',
+  lighter: '#fd9d25',
+  light: '#f59723',
+  main: '#EE9322',
+  dark: '#d98620',
+  darker: '#a86818',
   contrastText: '#FFFFFF',
 };
 

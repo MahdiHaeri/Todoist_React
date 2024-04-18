@@ -2,27 +2,30 @@ import {Avatar, Badge, Button, Icon, IconButton, Stack, Typography} from "@mui/m
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import ViewSidebarRoundedIcon from '@mui/icons-material/ViewSidebarRounded';
+import profileImage from '/src/assets/img/profileImage.jpeg'
 
 export const DrawerHeader = ({openNav, onToggleDrawer}) => {
     return (
         <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
-            <Button variant={"text"}>
+            <Button variant={"text"} sx={{'&.MuiButton-text': {textTransform: 'none'} }}>
                 <Stack direction={"row"} alignItems={"center"} justifyContent={"center"} spacing={1}>
                     <Badge
                         color={'secondary'}
                         badgeContent={' '}
                         variant={'dot'}
-                        overlap={'rectangular'}
-                        anchorOrigin={{vertical: 'top', horizontal: 'right'}}
+                        overlap={'circular'}
+                        anchorOrigin={{vertical: 'bottom', horizontal: 'right'}}
                         invisible={false}
                     >
-                        <Avatar sx={{
-                            width: 20,
-                            height: 20,
-                            outline: '2px solid',
-                            outlineColor: 'primary.main',
-                            outlineOffset: 1
-                        }}>
+                        <Avatar
+                            src={profileImage}
+                            sx={{
+                                width: 25,
+                                height: 25,
+                                outline: '2px solid',
+                                outlineColor: 'primary.main',
+                                outlineOffset: 1
+                            }}>
                         </Avatar>
                     </Badge>
                     <Stack direction={"row"} alignItems={"center"} justifyContent={"center"}>
