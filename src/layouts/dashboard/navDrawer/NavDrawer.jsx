@@ -24,26 +24,26 @@ export const NavDrawer = ({openNav, onToggleDrawer}) => {
             <Stack width={'100%'} height={'100%'}>
                 <DrawerHeader openNav={openNav} onToggleDrawer={onToggleDrawer}/>
                 <List disablePadding >
-                    <ListItem disablePadding >
-                        <ListItemButton sx={{borderRadius: 1,color: 'primary.main' }}>
-                            <ListItemIcon sx={{color: 'primary.main'}}>
+                    <ListItem dense disablePadding>
+                        <ListItemButton sx={{borderRadius: 1, color: 'primary.main'}}>
+                            <Stack width={'100%'} direction={"row"} justifyContent={"center"} alignItems={"center"} gap={1}>
                                 <AddCircleRoundedIcon/>
-                            </ListItemIcon>
-                            <ListItemText>
-                                <Typography variant={"subtitle2"} fontWeight={"bold"}>
-                                    Add task
-                                </Typography>
-                            </ListItemText>
+                                <ListItemText>
+                                    <Typography variant={"subtitle2"} fontWeight={"bold"}>
+                                        Add task
+                                    </Typography>
+                                </ListItemText>
+                            </Stack>
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding>
+                    <ListItem dense disablePadding disableGutters>
                         <ListItemButton sx={{borderRadius: 1}}>
-                            <ListItemIcon>
+                            <Stack width={'100%'} direction={"row"} justifyContent={"center"} alignItems={"center"} gap={1}>
                                 <SearchRoundedIcon/>
-                            </ListItemIcon>
-                            <ListItemText>
-                                Search
-                            </ListItemText>
+                                <ListItemText>
+                                    Search
+                                </ListItemText>
+                            </Stack>
                         </ListItemButton>
                     </ListItem>
                 </List>
