@@ -1,5 +1,15 @@
 import PropTypes from "prop-types";
-import {Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Stack, Typography} from "@mui/material";
+import {
+    Drawer,
+    Icon,
+    List,
+    ListItem,
+    ListItemButton,
+    ListItemIcon,
+    ListItemText,
+    Stack,
+    Typography
+} from "@mui/material";
 import {NAV} from "../config-layout.js";
 import {DrawerHeader} from "./component/DrawerHeader.jsx";
 import {DrawerListItem} from "./component/DrawerListItem.jsx";
@@ -23,31 +33,27 @@ export const NavDrawer = ({openNav, onToggleDrawer}) => {
         >
             <Stack width={'100%'} height={'100%'}>
                 <DrawerHeader openNav={openNav} onToggleDrawer={onToggleDrawer}/>
-                <List disablePadding >
-                    <ListItem dense disablePadding>
-                        <ListItemButton sx={{borderRadius: 1, color: 'primary.main'}}>
-                            <Stack width={'100%'} direction={"row"} justifyContent={"center"} alignItems={"center"} gap={1}>
-                                <AddCircleRoundedIcon/>
-                                <ListItemText>
-                                    <Typography variant={"subtitle2"} fontWeight={"bold"}>
-                                        Add task
-                                    </Typography>
-                                </ListItemText>
-                            </Stack>
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem dense disablePadding disableGutters>
-                        <ListItemButton sx={{borderRadius: 1}}>
-                            <Stack width={'100%'} direction={"row"} justifyContent={"center"} alignItems={"center"} gap={1}>
-                                <SearchRoundedIcon/>
-                                <ListItemText>
-                                    Search
-                                </ListItemText>
+                <List disablePadding>
+                    <ListItem disablePadding>
+                        <ListItemButton sx={{borderRadius: 1, padding: 1, color: 'primary.main'}}>
+                            <Stack
+                                width={'100%'}
+                                direction={"row"}
+                                justifyContent={"start"}
+                                alignItems={"center"}
+                                gap={1}
+                            >
+                                <Icon>
+                                    <AddCircleRoundedIcon/>
+                                </Icon>
+                                <Typography variant={"subtitle2"} fontWeight={"bold"}>
+                                    Add task
+                                </Typography>
                             </Stack>
                         </ListItemButton>
                     </ListItem>
                 </List>
-                <DrawerListItem />
+                <DrawerListItem/>
             </Stack>
         </Drawer>
     )
