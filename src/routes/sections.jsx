@@ -2,6 +2,10 @@ import {createBrowserRouter, Navigate} from "react-router-dom";
 import {NotFoundPage} from "../pages/NotFoundPage.jsx";
 import {AppPage} from "../pages/AppPage.jsx";
 import {LoginPage} from "../pages/LoginPage.jsx";
+import {TodayView} from "../ui/section/today/TodayView.jsx";
+import {UpcomingView} from "../ui/section/upcoming/UpcomingView.jsx";
+import {FilterLabelView} from "../ui/section/filters_labels/FilterLabelView.jsx";
+import {InboxView} from "../ui/section/inbox/InboxView.jsx";
 
 const router = createBrowserRouter([
     {
@@ -19,16 +23,20 @@ const router = createBrowserRouter([
                 element: <Navigate replace to={'today'} />
             },
             {
+                path: "inbox",
+                element: <InboxView/>,
+            },
+            {
                 path: "today",
-                element: <h1>Today</h1>,
+                element: <TodayView/>,
             },
             {
                 path: "upcoming",
-                element: <h1>Upcoming</h1>,
+                element: <UpcomingView/>,
             },
             {
-                path: "filters-labels",
-                element: <h1>Filters-Labels</h1>,
+                path: "filter-labels",
+                element: <FilterLabelView/>,
             }
         ],
     },

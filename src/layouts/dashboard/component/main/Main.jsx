@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import Box from '@mui/material/Box';
+import {Container} from "@mui/material";
 
 export const Main = ({children, ...other}) => {
 
@@ -12,11 +13,13 @@ export const Main = ({children, ...other}) => {
                 minHeight: 1,
                 display: 'flex',
                 flexDirection: 'column',
-                p: 2
+                p: 2,
             }}
             {...other}
         >
-            {children}
+            <Container>
+                {children}
+            </Container>
         </Box>
     );
 }

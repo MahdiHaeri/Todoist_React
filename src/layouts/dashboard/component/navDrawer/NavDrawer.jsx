@@ -5,17 +5,13 @@ import {
     List,
     ListItem,
     ListItemButton,
-    ListItemIcon,
-    ListItemText,
     Stack,
     Typography
 } from "@mui/material";
-import {NAV} from "../config-layout.js";
+import {NAV} from "../../config-layout.js";
 import {DrawerHeader} from "./component/DrawerHeader.jsx";
 import {DrawerListItem} from "./component/DrawerListItem.jsx";
 import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-
 
 export const NavDrawer = ({openNav, onToggleDrawer}) => {
     return (

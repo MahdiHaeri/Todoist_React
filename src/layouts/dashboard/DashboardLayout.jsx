@@ -1,10 +1,10 @@
 import {useState} from 'react';
 import PropTypes from 'prop-types';
 
-import {Header} from "./header /Header.jsx";
+import {Header} from "./component/header /Header.jsx";
 import {Divider, Stack} from "@mui/material";
-import {NavDrawer} from "./navDrawer/NavDrawer.jsx";
-import {Main} from "./main/Main.jsx";
+import {NavDrawer} from "./component/navDrawer/NavDrawer.jsx";
+import {Main} from "./component/main/Main.jsx";
 import {NAV} from "./config-layout.js";
 
 

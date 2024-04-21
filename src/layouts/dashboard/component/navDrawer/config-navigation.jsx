@@ -15,22 +15,22 @@ const navConfig = [
 },
   {
     title: 'Inbox',
-    path: '/inbox',
+    path: 'inbox',
     icon: <InboxRoundedIcon />,
   },
   {
     title: 'Today',
-    path: '/today',
+    path: 'today',
     icon: <CalendarMonthRoundedIcon />,
   },
   {
     title: 'Upcoming',
-    path: '/upcoming',
+    path: 'upcoming',
     icon: <UpcomingRoundedIcon />,
   },
   {
     title: 'Filter & Labels',
-    path: '/filter-labels',
+    path: 'filter-labels',
     icon: <GridViewRoundedIcon />,
   },
 ];
