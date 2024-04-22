@@ -14,8 +14,9 @@ export const TodoBoardHeader = () => {
                 </Typography>
             </Stack>
             <IconButton
-                size={"small"}
                 sx={{
+                    width: 32,
+                    height: 32,
                     borderRadius: 2,
                     "& .MuiTouchRipple-root .MuiTouchRipple-child": {
                         borderRadius: 2
