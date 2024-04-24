@@ -16,10 +16,10 @@ export default function ThemeProvider({ children }) {
   const memoizedValue = useMemo(
     () => ({
       palette: palette(),
-      // typography,
+      typography,
       // shadows: shadows(),
       // customShadows: customShadows(),
-      // shape: { borderRadius: 8 },
+      shape: { borderRadius: 8 },
     }),
     []
   );
