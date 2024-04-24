@@ -26,7 +26,6 @@ export default function DashboardLayout({children}) {
             <NavDrawer openNav={openNav} onToggleDrawer={onToggleDrawer}/>
             <Stack direction={"column"} flexGrow={1} sx={{marginLeft: openNav ? `${NAV.WIDTH}px` : 0, transition: '.3s all'}}>
                 <Header openNav={openNav} onToggleDrawer={onToggleDrawer}/>
-                {/*<Divider variant={'fullWidth'} />*/}
                 <Main>
                     {children}
                 </Main>
