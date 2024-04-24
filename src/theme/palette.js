@@ -71,6 +71,12 @@ export const error = {
   contrastText: '#FFFFFF',
 };
 
+export const background = {
+    paper: '#262626',
+    default: '#1e1e1e',
+    neutral: grey[200],
+}
+
 export const common = {
   black: '#000000',
   white: '#FFFFFF',
@@ -97,6 +103,7 @@ const base = {
   common,
   divider: alpha(grey[500], 0.2),
   action,
+  background,
 };
 
 // ----------------------------------------------------------------------

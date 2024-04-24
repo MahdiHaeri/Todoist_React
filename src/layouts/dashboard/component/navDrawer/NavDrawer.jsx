@@ -5,7 +5,7 @@ import {
     List,
     ListItem,
     ListItemButton,
-    Stack,
+    Stack, SwipeableDrawer,
     Typography
 } from "@mui/material";
 import {NAV} from "../../config-layout.js";
@@ -15,13 +15,14 @@ import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 
 export const NavDrawer = ({openNav, onToggleDrawer}) => {
     return (
-        <Drawer
+        <SwipeableDrawer
             variant={"persistent"}
             anchor={"left"}
             open={openNav}
             onClose={onToggleDrawer}
             PaperProps={{
                 sx: {
+                    border: 0,
                     width: NAV.WIDTH,
                     p: 1,
                 },
@@ -49,7 +50,7 @@ export const NavDrawer = ({openNav, onToggleDrawer}) => {
                 </List>
                 <DrawerListItem/>
             </Stack>
-        </Drawer>
+        </SwipeableDrawer>
     )
 }
 
