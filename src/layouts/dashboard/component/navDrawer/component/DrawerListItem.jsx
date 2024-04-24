@@ -8,11 +8,11 @@ export const DrawerListItem = () => {
         <List disablePadding>
             {navConfig.map((item) => (
                 <ListItem key={item.title} disablePadding>
-                    <ListItemButton sx={{borderRadius: 1, padding: 1}} onClick={() => {navigate(item.path)}}>
+                    <ListItemButton sx={{borderRadius: 1, padding: 1}} onClick={() => {
+                        navigate(item.path)
+                    }}>
                         <Stack width={'100%'} direction={"row"} justifyContent={"start"} alignItems={"center"} gap={1}>
-                            <Icon>
-                                {item.icon}
-                            </Icon>
+                            {item.icon}
                             <Typography variant={"subtitle2"}>
                                 {item.title}
                             </Typography>

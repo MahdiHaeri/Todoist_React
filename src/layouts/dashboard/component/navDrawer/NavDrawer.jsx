@@ -39,10 +39,8 @@ export const NavDrawer = ({openNav, onToggleDrawer}) => {
                                 alignItems={"center"}
                                 gap={1}
                             >
-                                <Icon>
-                                    <AddCircleRoundedIcon/>
-                                </Icon>
-                                <Typography variant={"subtitle2"} fontWeight={"bold"}>
+                                <AddCircleRoundedIcon sx={{fontSize: 28}}/>
+                                <Typography variant={"subtitle2"} fontWeight={"bold"} sx={{color: 'primary.lighter'}}>
                                     Add task
                                 </Typography>
                             </Stack>

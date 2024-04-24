@@ -7,7 +7,7 @@ import profileImage from '/src/assets/img/profileImage.jpeg'
 export const DrawerHeader = ({openNav, onToggleDrawer}) => {
     return (
         <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
-            <Button variant={"text"} sx={{'&.MuiButton-text': {textTransform: 'none', padding: 1}}}>
+            <Button variant={"text"} sx={{'&.MuiButton-text': {textTransform: 'none', padding: 1}}} color={'inherit'}>
                 <Stack direction={"row"} alignItems={"center"} justifyContent={"center"} spacing={1}>
                     <Badge
                         color={'secondary'}
@@ -20,8 +20,8 @@ export const DrawerHeader = ({openNav, onToggleDrawer}) => {
                         <Avatar
                             src={profileImage}
                             sx={{
-                                width: 20,
-                                height: 20,
+                                width: 24,
+                                height: 24,
                                 outline: '2px solid',
                                 outlineColor: 'primary.main',
                                 outlineOffset: 1,
