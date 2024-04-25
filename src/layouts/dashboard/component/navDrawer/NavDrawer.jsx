@@ -1,19 +1,29 @@
 import PropTypes from "prop-types";
 import {
+    Button,
+    Divider,
     Drawer,
-    Icon,
+    Icon, InputBase,
     List,
     ListItem,
-    ListItemButton,
-    Stack, SwipeableDrawer,
+    ListItemButton, Modal,
+    Stack, SwipeableDrawer, TextField,
     Typography
 } from "@mui/material";
 import {NAV} from "../../config-layout.js";
 import {DrawerHeader} from "./component/DrawerHeader.jsx";
 import {DrawerListItem} from "./component/DrawerListItem.jsx";
 import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
+import {AddTaskModal} from "../../../../ui/modal/AddTaskModal/AddTaskModal.jsx";
+import {useState} from "react";
 
 export const NavDrawer = ({openNav, onToggleDrawer}) => {
+    const [addTaskModalOpen, setAddTaskModalOpen] =  useState(false)
+
+    function onToggleAddTaskModalOpen() {
+        setAddTaskModalOpen(!addTaskModalOpen)
+    }
+
     return (
         <SwipeableDrawer
             variant={"persistent"}
@@ -28,11 +38,12 @@ export const NavDrawer = ({openNav, onToggleDrawer}) => {
                 },
             }}
         >
+            <AddTaskModal open={addTaskModalOpen} onToggleOpen={onToggleAddTaskModalOpen}/>
             <Stack width={'100%'} height={'100%'}>
                 <DrawerHeader openNav={openNav} onToggleDrawer={onToggleDrawer}/>
                 <List disablePadding>
                     <ListItem disablePadding>
-                        <ListItemButton sx={{borderRadius: 1, padding: 1, color: 'primary.main'}}>
+                        <ListItemButton sx={{borderRadius: 1, padding: 1, color: 'primary.main'}} onClick={onToggleAddTaskModalOpen}>
                             <Stack
                                 width={'100%'}
                                 direction={"row"}
