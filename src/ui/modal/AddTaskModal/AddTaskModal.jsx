@@ -15,7 +15,11 @@ export const AddTaskModal = ({open, onToggleOpen}) => {
                 justifyContent: 'center',
                 alignItems: 'center',
             }}
-            disableAutoFocus={true}
+            BackdropProps={{
+                style: {
+                    opacity: 0
+                }
+            }}
         >
             <Stack
                 width={550}
@@ -23,6 +27,7 @@ export const AddTaskModal = ({open, onToggleOpen}) => {
                 alignItems={"center"}
                 bgcolor={'background.default'}
                 borderRadius={3}
+                boxShadow={24}
                 position={"absolute"}
                 top={100}
                 sx={{
@@ -52,7 +57,7 @@ export const AddTaskModal = ({open, onToggleOpen}) => {
                     >
                         < InputBase
                             fullWidth
-                            placeholder={"Title"}
+                            placeholder={"Task name"}
                             sx={{
                                 fontSize: 24,
                                 fontWeight: 'bold',
@@ -106,7 +111,6 @@ export const AddTaskModal = ({open, onToggleOpen}) => {
                         startIcon={<InboxRoundedIcon/>}
                         endIcon={<ArrowDropDownRoundedIcon/>}
                         size={"small"}
-                        s
                     >
                         Inbox
                     </Button>

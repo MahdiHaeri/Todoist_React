@@ -14,7 +14,7 @@ export const Header = ({openNav, onToggleDrawer}) => {
     return (
         <AppBar position="static"
                 color="inherit"
-                elevation={'none'} j
+                elevation={0}
                 sx={{
                     height: '50px',
                     width: '100%',

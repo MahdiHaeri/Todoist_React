@@ -1,13 +1,10 @@
 import PropTypes from "prop-types";
 import {
-    Button,
-    Divider,
     Drawer,
-    Icon, InputBase,
     List,
     ListItem,
-    ListItemButton, Modal,
-    Stack, SwipeableDrawer, TextField,
+    ListItemButton,
+    Stack,
     Typography
 } from "@mui/material";
 import {NAV} from "../../config-layout.js";
@@ -25,7 +22,7 @@ export const NavDrawer = ({openNav, onToggleDrawer}) => {
     }
 
     return (
-        <SwipeableDrawer
+        <Drawer
             variant={"persistent"}
             anchor={"left"}
             open={openNav}
@@ -61,7 +58,7 @@ export const NavDrawer = ({openNav, onToggleDrawer}) => {
                 </List>
                 <DrawerListItem/>
             </Stack>
-        </SwipeableDrawer>
+        </Drawer>
     )
 }
 

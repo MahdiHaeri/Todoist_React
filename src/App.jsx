@@ -5,7 +5,7 @@ import ThemeProvider from "./theme/index.jsx";
 export const App = () => {
     return (
         <ThemeProvider>
-            <RouterProvider router={router} />
+            <RouterProvider router={router}/>
         </ThemeProvider>
     )
 }
