@@ -4,7 +4,12 @@ import {TodoBoard} from "../component/todoBoard/TodoBoard.jsx";
 
 export const InboxView = () => {
     return (
-        <Stack>
+        <Stack
+            width={'100%'}
+            height={'100%'}
+            border={'1px solid'}
+            overflow={"auto"}
+        >
             <Stack direction={"column"} justifyContent={"center"} alignItems={"start"} gap={.5}>
                 <Typography variant={"h5"} fontWeight={"bold"}>
                     Inbox
@@ -16,10 +21,24 @@ export const InboxView = () => {
                     </Typography>
                 </Stack>
             </Stack>
-            <Stack>
-                <TodoBoard>
-
-                </TodoBoard>
+            <Stack direction={"row"}>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
+                <TodoBoard/>
             </Stack>
         </Stack>
     )

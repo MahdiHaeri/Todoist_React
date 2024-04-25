@@ -12,18 +12,18 @@ export const Header = ({openNav, onToggleDrawer}) => {
         </IconButton>;
 
     return (
-        <AppBar position="static"
-                color="inherit"
-                elevation={0}
-                sx={{
-                    height: '50px',
-                    width: '100%',
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'center',
-                    p: 1,
-                    backgroundColor: 'background.default'
-                }}
+        <AppBar
+            color="inherit"
+            elevation={0}
+            sx={{
+                height: '50px',
+                width: '100%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                p: 1,
+                backgroundColor: 'background.default'
+            }}
         >
             <Stack>
                 {renderNavButton}
