@@ -45,16 +45,6 @@ export const AddTaskModal = ({open, onToggleOpen}) => {
                             width={'100%'}
                             overflow={"auto"}
                             maxHeight={250}
-                            sx={{
-                                '&::-webkit-scrollbar': {
-                                    width: '.4em'
-                                },
-                                '&::-webkit-scrollbar-track': {},
-                                '&::-webkit-scrollbar-thumb': {
-                                    backgroundColor: 'background.paper',
-                                    borderRadius: 4
-                                }
-                            }}
                         >
                             < InputBase
                                 fullWidth

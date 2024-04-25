@@ -22,32 +22,26 @@ export default function DashboardLayout({children}) {
     }
 
     return (
-        <Stack direction={"row"} width={'100%'} height={'100%'} display={"flex"} border={4} borderColor={'tomato'}>
+        <Stack
+            width={'100%'}
+            height={'100%'}
+            sx={{
+                paddingLeft: openNav ? `${NAV.WIDTH}px` : 0, transition: '.3s all',
+                paddingTop: '50px'
+            }}
+        >
             <NavDrawer openNav={openNav} onToggleDrawer={onToggleDrawer}/>
+            <Header openNav={openNav} onToggleDrawer={onToggleDrawer}/>
             <Stack
-                display={"flex"}
-                direction={"column"}
-                flex={1}
                 height={'100%'}
-                border={4}
-                borderColor={'blue'}
-
-                sx={{
-                    marginLeft: openNav ? `${NAV.WIDTH}px` : 0, transition: '.3s all',
-                }}
+                width={'100%'}
+                // sx={{
+                //     marginLeft: openNav ? `${NAV.WIDTH}px` : 0, transition: '.3s all',
+                // }}
             >
-                <Header openNav={openNav} onToggleDrawer={onToggleDrawer}/>
-                <Stack
-                    flex={1}
-                    width={'100%'}
-                    sx={{marginTop: '50px'}}
-                    border={4}
-                    borderColor={'green'}
-                >
-                    <Main>
-                        {children}
-                    </Main>
-                </Stack>
+                <Main>
+                    {children}
+                </Main>
             </Stack>
         </Stack>
     );

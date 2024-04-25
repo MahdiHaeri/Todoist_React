@@ -10,9 +10,8 @@ export const Main = ({children, ...other}) => {
             component="main"
             width={'100%'}
             height={'100%'}
-            border={4}
-            borderColor={"gold"}
             padding={2}
+            overflow={'auto'}
             {...other}
         >
             {/*<Container>*/}

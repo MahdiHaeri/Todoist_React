@@ -9,7 +9,7 @@ export const AppPage = () => {
             <Helmet>
                 <title> Dashboard </title>
             </Helmet>
-            <Stack width={'80vw'} height={'80vh'}>
+            <Stack width={'100vw'} height={'100vh'}>
                 <DashboardLayout>
                     <Outlet />
                 </DashboardLayout>

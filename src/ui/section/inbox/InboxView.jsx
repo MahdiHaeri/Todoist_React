@@ -7,8 +7,6 @@ export const InboxView = () => {
         <Stack
             width={'100%'}
             height={'100%'}
-            border={'1px solid'}
-            overflow={"auto"}
         >
             <Stack direction={"column"} justifyContent={"center"} alignItems={"start"} gap={.5}>
                 <Typography variant={"h5"} fontWeight={"bold"}>
@@ -21,15 +19,9 @@ export const InboxView = () => {
                     </Typography>
                 </Stack>
             </Stack>
-            <Stack direction={"row"}>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
+            <Stack
+                direction={"row"}
+            >
                 <TodoBoard/>
                 <TodoBoard/>
                 <TodoBoard/>

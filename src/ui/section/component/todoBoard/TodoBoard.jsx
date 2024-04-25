@@ -7,7 +7,7 @@ import {TodoCard} from "./component/TodoCard.jsx";
 
 export const TodoBoard = () => {
     return (
-        <Stack width={260} padding={1} gap={1}>
+        <Stack width={260} minWidth={260} padding={1} gap={1}>
             <TodoBoardHeader/>
             <Stack direction={"column"} width={'100%'} gap={1}>
                 <TodoCard/>
