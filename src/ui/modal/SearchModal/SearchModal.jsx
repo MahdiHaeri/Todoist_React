@@ -76,9 +76,17 @@ export const SearchModal = ({open, onToggleOpen}) => {
                                         {item.title}
                                     </Typography>
                                 </Stack>
-                                <List disablePadding >
+                                <List disablePadding>
                                     {item.items.map((subItem, subIndex) => (
-                                        <ListItem key={subIndex} disablePadding sx={{'&:hover': {borderLeft: 2, borderColor: 'primary.main'}}}>
+                                        <ListItem
+                                            key={subIndex}
+                                            disablePadding
+                                            sx={{
+                                                borderLeft: 2,
+                                                borderColor: 'transparent',
+                                                '&:hover': {borderColor: 'primary.main'}
+                                            }}
+                                        >
                                             <ListItemButton sx={{paddingX: 2}}>
                                                 <Stack
                                                     width={'100%'}
