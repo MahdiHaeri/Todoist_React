@@ -2,9 +2,17 @@ import {IconButton, Stack, Typography} from "@mui/material";
 import MoreHorizRoundedIcon from '@mui/icons-material/MoreHorizRounded';
 
 
-export const TodoBoardHeader = () => {
+export const TodoBoardHeader = ({handleHover, handleHoverExit}) => {
     return (
-        <Stack direction={"row"} width={'100%'} justifyContent={"space-between"} alignItems={"center"}>
+        <Stack
+            direction={"row"}
+            width={'100%'}
+            padding={1}
+            justifyContent={"space-between"}
+            alignItems={"center"}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleHoverExit}
+        >
             <Stack direction={"row"} alignItems={"center"} justifyContent={"center"} gap={1}>
                 <Typography variant={"subtitle1"} fontWeight={"bold"}>
                     React
