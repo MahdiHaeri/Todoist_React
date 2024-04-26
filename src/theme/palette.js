@@ -84,7 +84,7 @@ export const common = {
 
 export const action = {
     hover: alpha(grey[500], 0.08),
-    selected: alpha(grey[500], 0.16),
+    selected: alpha('#b23c3b', 0.16),
     disabled: alpha(grey[500], 0.8),
     disabledBackground: alpha(grey[500], 0.24),
     focus: alpha(grey[500], 0.24),
