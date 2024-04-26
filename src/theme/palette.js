@@ -115,7 +115,7 @@ export function palette(mode) {
                 ? {
                     mode: 'light',
                     background: {
-                        paper: '#F9F3EE',
+                        paper: '#E8E8E8',
                         default: 'white',
                         neutral: grey[200],
                     },
