@@ -2,17 +2,9 @@ import {IconButton, Stack, Typography} from "@mui/material";
 import MoreHorizRoundedIcon from '@mui/icons-material/MoreHorizRounded';
 
 
-export const TodoBoardHeader = ({handleHover, handleHoverExit}) => {
+export const TodoBoardHeader = () => {
     return (
-        <Stack
-            direction={"row"}
-            width={'100%'}
-            padding={1}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            onMouseEnter={handleHover}
-            onMouseLeave={handleHoverExit}
-        >
+        <Stack direction={"row"} width={'100%'} justifyContent={"space-between"} alignItems={"center"}>
             <Stack direction={"row"} alignItems={"center"} justifyContent={"center"} gap={1}>
                 <Typography variant={"subtitle1"} fontWeight={"bold"}>
                     React
@@ -26,6 +18,7 @@ export const TodoBoardHeader = ({handleHover, handleHoverExit}) => {
                     width: 32,
                     height: 32,
                     borderRadius: 2,
+                    color: 'text.secondary',
                     "& .MuiTouchRipple-root .MuiTouchRipple-child": {
                         borderRadius: 2
                     }

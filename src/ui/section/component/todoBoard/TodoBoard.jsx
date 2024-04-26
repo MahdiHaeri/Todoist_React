@@ -24,7 +24,6 @@ export const TodoBoard = () => {
             borderRadius={1}
             border={1}
             borderColor={'transparent'}
-            draggable={true}
             sx={{
                 transition: '.3s all',
                 ...(isHovered &&
@@ -35,7 +34,9 @@ export const TodoBoard = () => {
                 )
             }}
         >
-            <TodoBoardHeader handleHover={handleHover} handleHoverExit={handleHoverExit}/>
+            <Stack width={'100%'} padding={1} onMouseEnter={handleHover} onMouseLeave={handleHoverExit}>
+                <TodoBoardHeader/>
+            </Stack>
             <Stack direction={"column"} width={'100%'} gap={1} padding={1}>
                 <TodoCard/>
                 <TodoCard/>
@@ -43,7 +44,9 @@ export const TodoBoard = () => {
                 <TodoCard/>
                 <TodoCard/>
             </Stack>
-            <TodoBoardAddButton/>
+            <Stack width={'100%'} paddingX={1}>
+                <TodoBoardAddButton/>
+            </Stack>
         </Stack>
     )
 }
