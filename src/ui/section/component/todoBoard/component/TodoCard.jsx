@@ -4,7 +4,8 @@ import RadioButtonUncheckedRoundedIcon from '@mui/icons-material/RadioButtonUnch
 import CheckCircleOutlineRoundedIcon from '@mui/icons-material/CheckCircleOutlineRounded';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import MoreHorizRoundedIcon from '@mui/icons-material/MoreHorizRounded';
-import {brown} from '@mui/material/colors';
+import {alpha} from "@mui/material/styles";
+import {grey} from "@mui/material/colors";
 
 
 export const TodoCard = () => {
@@ -20,21 +21,28 @@ export const TodoCard = () => {
     }
 
     return (
-        <Card
-            onMouseEnter={handleHover}
-            onMouseLeave={handleHoverExit}
-            sx={{
-                transition: '.3s all',
-                border: 1,
-                borderColor: 'grey.700',
-                borderRadius: 2.5,
-                '&:hover': {
-                    borderColor: 'grey.500',
-                    cursor: 'pointer'
-                }
-            }}
-        >
-            <Stack direction={"row"} gap={1} padding={1}>
+        <Card>
+            <Stack
+                direction={"row"}
+                gap={1}
+                padding={1}
+                onMouseEnter={handleHover}
+                onMouseLeave={handleHoverExit}
+                sx={{
+                    transition: '.3s all',
+                    border: 1,
+                    borderColor: 'grey.700',
+                    borderRadius: 2.5,
+                    '&:hover': {
+                        borderColor: 'grey.500',
+                        cursor: 'pointer'
+                    },
+                    '&:active': {
+                        // borderColor: 'grey.300',
+                        backgroundColor: alpha(grey[300], 0.1),
+                    }
+                }}
+            >
                 <Checkbox
                     checked={checked}
                     onClick={() => setChecked(!checked)}
