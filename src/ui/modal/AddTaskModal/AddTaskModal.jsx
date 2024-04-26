@@ -27,7 +27,7 @@ export const AddTaskModal = ({open, onToggleOpen}) => {
                     justifyContent={"start"}
                     alignItems={"center"}
                     bgcolor={'background.default'}
-                    borderRadius={3}
+                    borderRadius={2.5}
                     boxShadow={24}
                     position={"absolute"}
                     top={100}
