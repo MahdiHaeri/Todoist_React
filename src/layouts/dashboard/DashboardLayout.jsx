@@ -32,20 +32,12 @@ export default function DashboardLayout({children}) {
             <NavDrawer openNav={openNav} onToggleDrawer={onToggleDrawer}/>
             <Header openNav={openNav} onToggleDrawer={onToggleDrawer}/>
             <Stack
-                width={'100%'}
                 height={'100%'}
-                sx={{
-                    paddingTop: '50px'
-                }}
+                width={'100%'}
             >
-                <Stack
-                    height={'100%'}
-                    width={'100%'}
-                >
-                    <Main>
-                        {children}
-                    </Main>
-                </Stack>
+                <Main>
+                    {children}
+                </Main>
             </Stack>
         </Stack>
     );
