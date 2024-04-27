@@ -27,21 +27,25 @@ export default function DashboardLayout({children}) {
             height={'100%'}
             sx={{
                 paddingLeft: openNav ? `${NAV.WIDTH}px` : 0, transition: '.3s all',
-                paddingTop: '50px'
             }}
         >
             <NavDrawer openNav={openNav} onToggleDrawer={onToggleDrawer}/>
             <Header openNav={openNav} onToggleDrawer={onToggleDrawer}/>
             <Stack
-                height={'100%'}
                 width={'100%'}
-                // sx={{
-                //     marginLeft: openNav ? `${NAV.WIDTH}px` : 0, transition: '.3s all',
-                // }}
+                height={'100%'}
+                sx={{
+                    paddingTop: '50px'
+                }}
             >
-                <Main>
-                    {children}
-                </Main>
+                <Stack
+                    height={'100%'}
+                    width={'100%'}
+                >
+                    <Main>
+                        {children}
+                    </Main>
+                </Stack>
             </Stack>
         </Stack>
     );

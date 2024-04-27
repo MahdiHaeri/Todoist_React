@@ -13,6 +13,7 @@ export const Header = ({openNav, onToggleDrawer}) => {
 
     return (
         <AppBar
+            position={'static'}
             color="inherit"
             elevation={0}
             sx={{
