@@ -21,20 +21,14 @@ export const TodoCard = () => {
     }
 
     return (
-        <Stack
-            direction={"row"}
-            gap={1}
-            padding={1}
-            onMouseEnter={handleHover}
-            onMouseLeave={handleHoverExit}
-            bgcolor={'background.paper'}
+        <Card
             sx={{
                 transition: '.3s all',
                 border: 1,
-                borderColor: 'grey.700',
+                borderColor: 'transparent',
                 borderRadius: 2.5,
                 '&:hover': {
-                    borderColor: 'grey.500',
+                    borderColor: 'text.secondary',
                     cursor: 'pointer'
                 },
                 '&:active': {
@@ -43,39 +37,47 @@ export const TodoCard = () => {
                 }
             }}
         >
-            <Checkbox
-                checked={checked}
-                onClick={() => setChecked(!checked)}
-                icon={<RadioButtonUncheckedRoundedIcon/>}
-                checkedIcon={<CheckCircleOutlineRoundedIcon/>}
-                size={'medium'}
-                sx={{
-                    width: 32,
-                    height: 32,
-                }}
-            />
-            <Stack flex={1}>
-                <Typography variant={"subtitle2"}>
-                    Task title
-                </Typography>
-                <Typography variant={"caption"} sx={{color: 'text.secondary'}}>
-                    Task description
-                </Typography>
-            </Stack>
-            <IconButton
-                sx={{
-                    transition: '.3s all',
-                    width: 32,
-                    height: 32,
-                    borderRadius: 2,
-                    "& .MuiTouchRipple-root .MuiTouchRipple-child": {
-                        borderRadius: 2
-                    },
-                    opacity: hover ? 1 : 0
-                }}
+            <Stack
+                direction={"row"}
+                gap={1}
+                padding={1}
+                onMouseEnter={handleHover}
+                onMouseLeave={handleHoverExit}
             >
-                <MoreHorizRoundedIcon/>
-            </IconButton>
-        </Stack>
+                <Checkbox
+                    checked={checked}
+                    onClick={() => setChecked(!checked)}
+                    icon={<RadioButtonUncheckedRoundedIcon/>}
+                    checkedIcon={<CheckCircleOutlineRoundedIcon/>}
+                    size={'medium'}
+                    sx={{
+                        width: 32,
+                        height: 32,
+                    }}
+                />
+                <Stack flex={1}>
+                    <Typography variant={"subtitle2"}>
+                        Task title
+                    </Typography>
+                    <Typography variant={"caption"} sx={{color: 'text.secondary'}}>
+                        Task description
+                    </Typography>
+                </Stack>
+                <IconButton
+                    sx={{
+                        transition: '.3s all',
+                        width: 32,
+                        height: 32,
+                        borderRadius: 2,
+                        "& .MuiTouchRipple-root .MuiTouchRipple-child": {
+                            borderRadius: 2
+                        },
+                        opacity: hover ? 1 : 0
+                    }}
+                >
+                    <MoreHorizRoundedIcon/>
+                </IconButton>
+            </Stack>
+        </Card>
     )
 }
