@@ -71,6 +71,34 @@ export const error = {
     contrastText: '#FFFFFF',
 };
 
+export const highPriority = {
+    light: '#e05d5c',
+    main: '#dd4b4a',
+    dark: '#c64342',
+    contrastText: '#FFFFFF',
+};
+
+export const mediumPriority = {
+    light: '#f59723',
+    main: '#EE9322',
+    dark: '#d98620',
+    contrastText: '#FFFFFF',
+};
+
+export const lowPriority = {
+    light: '#5BE49B',
+    main: '#00A76F',
+    dark: '#007867',
+    contrastText: '#FFFFFF',
+}
+
+export const defaultPriority = {
+    light: '#919EAB',
+    main: '#919EAB',
+    dark: '#454F5B',
+    contrastText: '#FFFFFF',
+}
+
 export const background = {
     paper: '#262626',
     default: '#1e1e1e',
@@ -101,6 +129,12 @@ const base = {
     error,
     grey,
     common,
+
+    highPriority,
+    mediumPriority,
+    lowPriority,
+    defaultPriority,
+
     divider: alpha(grey[500], 0.2),
     action,
     background,

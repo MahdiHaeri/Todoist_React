@@ -8,7 +8,7 @@ import {alpha} from "@mui/material/styles";
 import {grey} from "@mui/material/colors";
 
 
-export const TodoCard = () => {
+export const TodoCard = ({priority}) => {
     const [checked, setChecked] = useState(false)
     const [hover, setHover] = useState(false)
 
@@ -48,11 +48,15 @@ export const TodoCard = () => {
                     checked={checked}
                     onClick={() => setChecked(!checked)}
                     icon={<RadioButtonUncheckedRoundedIcon/>}
+                    color={`${priority}Priority`}
                     checkedIcon={<CheckCircleOutlineRoundedIcon/>}
                     size={'medium'}
                     sx={{
                         width: 32,
                         height: 32,
+                        '& .MuiSvgIcon-root': {
+                            color: `${priority}Priority.main`
+                        }
                     }}
                 />
                 <Stack flex={1}>

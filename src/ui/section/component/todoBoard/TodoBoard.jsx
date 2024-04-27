@@ -38,11 +38,10 @@ export const TodoBoard = () => {
                 <TodoBoardHeader/>
             </Stack>
             <Stack direction={"column"} width={'100%'} gap={1} padding={1}>
-                <TodoCard/>
-                <TodoCard/>
-                <TodoCard/>
-                <TodoCard/>
-                <TodoCard/>
+                <TodoCard priority={'high'}/>
+                <TodoCard priority={'medium'}/>
+                <TodoCard priority={'low'}/>
+                <TodoCard priority={'medium'}/>
             </Stack>
             <Stack width={'100%'} paddingX={1}>
                 <TodoBoardAddButton/>
