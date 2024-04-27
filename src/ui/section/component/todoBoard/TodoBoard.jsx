@@ -41,7 +41,7 @@ export const TodoBoard = () => {
                 <TodoCard priority={'high'}/>
                 <TodoCard priority={'medium'}/>
                 <TodoCard priority={'low'}/>
-                <TodoCard priority={'medium'}/>
+                <TodoCard priority={'default'}/>
             </Stack>
             <Stack width={'100%'} paddingX={1}>
                 <TodoBoardAddButton/>
