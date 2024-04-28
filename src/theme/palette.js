@@ -153,6 +153,7 @@ export function palette(mode) {
                         default: 'white',
                         neutral: grey[200],
                     },
+                    divider: alpha('#3d3d3d', 0.2),
                 }
                 : {
                     mode: 'dark',
@@ -161,21 +162,8 @@ export function palette(mode) {
                         default: '#1e1e1e',
                         neutral: grey[200],
                     },
+                    divider: alpha('#3d3d3d', 0.6),
                 }
         )
-        // text: {
-        //   primary: grey[800],
-        //   secondary: grey[600],
-        //   disabled: grey[500],
-        // },
-        // background: {
-        //   paper: '#FFFFFF',
-        //   default: grey[100],
-        //   neutral: grey[200],
-        // },
-        // action: {
-        //   ...base.action,
-        //   active: grey[600],
-        // },
     };
 }

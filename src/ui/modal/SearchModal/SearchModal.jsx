@@ -42,7 +42,7 @@ export const SearchModal = ({open, onToggleOpen}) => {
                     top={180}
                     sx={{
                         border: '1px solid',
-                        borderColor: 'background.paper',
+                        borderColor: 'divider',
                     }}
                     overflow={"hidden"}
                 >

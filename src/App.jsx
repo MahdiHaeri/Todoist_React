@@ -5,7 +5,7 @@ import {useState} from "react";
 import {ThemeContext} from "./hook/context/ThemeContext.jsx";
 
 export const App = () => {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);

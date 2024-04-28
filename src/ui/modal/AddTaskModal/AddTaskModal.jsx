@@ -33,7 +33,7 @@ export const AddTaskModal = ({open, onToggleOpen}) => {
                     top={100}
                     sx={{
                         border: '1px solid',
-                        borderColor: 'background.paper',
+                        borderColor: 'divider',
                     }}
                 >
                     <Stack

@@ -25,7 +25,7 @@ export const TodoCard = ({priority}) => {
             sx={{
                 transition: '.3s all',
                 border: 1,
-                borderColor: 'transparent',
+                borderColor: 'divider',
                 borderRadius: 2.5,
                 '&:hover': {
                     borderColor: 'text.secondary',

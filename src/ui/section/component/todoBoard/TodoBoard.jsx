@@ -28,7 +28,7 @@ export const TodoBoard = () => {
                 transition: '.3s all',
                 ...(isHovered &&
                     {
-                        borderColor: 'action.hover',
+                        borderColor: 'divider',
                         cursor: 'grab',
                     }
                 )
