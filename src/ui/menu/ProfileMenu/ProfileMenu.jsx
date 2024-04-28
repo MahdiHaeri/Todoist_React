@@ -25,7 +25,7 @@ export const ProfileMenu = ({open, anchorEl, onClose}) => {
 
             sx={{
                 '& .MuiMenu-paper': {
-                    borderRadius: 3,
+                    borderRadius: 2.5,
                     boxShadow: 4,
                     border: 1,
                     borderColor: 'divider',
@@ -56,7 +56,7 @@ export const ProfileMenu = ({open, anchorEl, onClose}) => {
                                         key={itemIndex}
                                         disableGutters
                                         sx={{
-                                            borderRadius: 1,
+                                            borderRadius: 1.5,
                                             paddingX: 1,
                                             paddingY: .5,
                                         }}
