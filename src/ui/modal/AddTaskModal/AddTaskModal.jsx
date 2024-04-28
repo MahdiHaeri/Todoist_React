@@ -114,6 +114,7 @@ export const AddTaskModal = ({open, onToggleOpen}) => {
                                 color={'inherit'}
                                 sx={{'&.MuiButton-contained': {textTransform: 'none'}}}
                                 size={"small"}
+                                onClick={onToggleOpen}
                             >
                                 Cancel
                             </Button>
