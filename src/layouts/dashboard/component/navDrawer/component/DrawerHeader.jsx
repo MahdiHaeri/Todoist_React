@@ -3,11 +3,28 @@ import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownR
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import ViewSidebarRoundedIcon from '@mui/icons-material/ViewSidebarRounded';
 import profileImage from '/src/assets/img/profileImage.jpeg'
+import {useState} from "react";
+import {ProfileMenu} from "../../../../../ui/menu/ProfileMenu/ProfileMenu.jsx";
 
 export const DrawerHeader = ({openNav, onToggleDrawer}) => {
+    const [anchorEl, setAnchorEl] = useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
     return (
         <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
-            <Button variant={"text"} sx={{'&.MuiButton-text': {textTransform: 'none', padding: 1}}} color={'inherit'}>
+            <ProfileMenu anchorEl={anchorEl} open={open} onClose={handleClose}/>
+            <Button
+                variant={"text"}
+                sx={{'&.MuiButton-text': {textTransform: 'none', padding: 1}}}
+                color={'inherit'}
+                onClick={handleClick}
+            >
                 <Stack direction={"row"} alignItems={"center"} justifyContent={"center"} spacing={1}>
                     <Badge
                         color={'secondary'}
