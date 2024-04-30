@@ -25,12 +25,6 @@ export const InboxView = () => {
                 <TodoBoard/>
                 <TodoBoard/>
                 <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
-                <TodoBoard/>
             </Stack>
         </Stack>
     )
