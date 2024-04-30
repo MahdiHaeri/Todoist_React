@@ -7,6 +7,7 @@ export const InboxView = () => {
         <Stack
             width={'100%'}
             height={'100%'}
+            paddingX={4}
         >
             <Stack direction={"column"} justifyContent={"center"} alignItems={"start"} gap={.5}>
                 <Typography variant={"h5"} fontWeight={"bold"}>

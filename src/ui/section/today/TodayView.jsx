@@ -4,7 +4,9 @@ import {TodoBoard} from "../component/todoBoard/TodoBoard.jsx";
 
 export const TodayView = () => {
     return (
-        <Stack>
+        <Stack
+            paddingX={4}
+        >
             <Stack direction={"column"} justifyContent={"center"} alignItems={"start"} gap={.5}>
                 <Typography variant={"h5"} fontWeight={"bold"}>
                     Today
