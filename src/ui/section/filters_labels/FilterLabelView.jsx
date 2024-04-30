@@ -16,11 +16,21 @@ export const FilterLabelView = () => {
                 alignItems={"start"}
                 gap={1}
             >
-                <Typography variant={'h5'} fontWeight={'bold'}>
-                    Filters & Labels
-                </Typography>
-                <FilterLabelAccordion title={"Filters"}/>
-                <FilterLabelAccordion title={"Labels"}/>
+                <Stack
+                    width={'100%'}
+                    paddingX={4.5}
+                >
+                    <Typography variant={'h5'} fontWeight={'bold'}>
+                        Filters & Labels
+                    </Typography>
+                </Stack>
+                <Stack
+                    width={'100%'}
+                    gap={4}
+                >
+                    <FilterLabelAccordion title={"Filters"}/>
+                    <FilterLabelAccordion title={"Labels"}/>
+                </Stack>
             </Stack>
         </Stack>
     )
