@@ -23,6 +23,7 @@ export const InboxView = () => {
             </Stack>
             <Stack
                 direction={"row"}
+                gap={1}
             >
                 <TodoBoard/>
                 <TodoBoard/>

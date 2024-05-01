@@ -19,7 +19,9 @@ export const TodayView = () => {
                     </Typography>
                 </Stack>
             </Stack>
-            <Stack>
+            <Stack
+                gap={1}
+            >
                 <TodoBoard>
 
                 </TodoBoard>
