@@ -19,7 +19,7 @@ export const TodoBoard = () => {
 
     return (
         <Stack
-            width={260}
+            width={275}
             minWidth={260}
             borderRadius={1}
             border={1}
