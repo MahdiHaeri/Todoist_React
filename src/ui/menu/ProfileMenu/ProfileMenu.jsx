@@ -106,7 +106,7 @@ export const ProfileMenu = ({open, anchorEl, onClose}) => {
                     </Stack>
                 ))}
                 <Stack
-                    padding={1}
+                    padding={.5}
                 >
                     <Stack direction={"row"} justifyContent={"start"} alignItems={"center"}>
                         <Button
