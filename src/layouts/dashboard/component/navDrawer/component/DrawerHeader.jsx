@@ -57,10 +57,33 @@ export const DrawerHeader = ({openNav, onToggleDrawer}) => {
             </Button>
 
             <Stack direction={"row"} spacing={1} alignItems={"center"} justifyContent={"center"}>
-                <IconButton size={"medium"}>
+                <IconButton
+                    size={"medium"}
+                    sx={{
+                        width: 32,
+                        height: 32,
+                        borderRadius: 2,
+                        color: 'text.secondary',
+                        "& .MuiTouchRipple-root .MuiTouchRipple-child": {
+                            borderRadius: 2
+                        }
+                    }}
+                >
                     <NotificationsRoundedIcon fontSize={"small"}/>
                 </IconButton>
-                <IconButton size={"medium"} onClick={onToggleDrawer}>
+                <IconButton
+                    size={"medium"}
+                    onClick={onToggleDrawer}
+                    sx={{
+                        width: 32,
+                        height: 32,
+                        borderRadius: 2,
+                        color: 'text.secondary',
+                        "& .MuiTouchRipple-root .MuiTouchRipple-child": {
+                            borderRadius: 2
+                        }
+                    }}
+                >
                     <ViewSidebarRoundedIcon fontSize={"small"}/>
                 </IconButton>
             </Stack>

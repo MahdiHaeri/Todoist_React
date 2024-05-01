@@ -7,7 +7,19 @@ export const Header = ({openNav, onToggleDrawer}) => {
     const renderNavButton = openNav ?
         <></>
         :
-        <IconButton size={"medium"} onClick={onToggleDrawer}>
+        <IconButton
+            size={"medium"}
+            onClick={onToggleDrawer}
+            sx={{
+                width: 32,
+                height: 32,
+                borderRadius: 2,
+                color: 'text.secondary',
+                "& .MuiTouchRipple-root .MuiTouchRipple-child": {
+                    borderRadius: 2
+                }
+            }}
+        >
             <ViewSidebarRoundedIcon fontSize={"small"}/>
         </IconButton>;
 
@@ -30,7 +42,17 @@ export const Header = ({openNav, onToggleDrawer}) => {
                 {renderNavButton}
             </Stack>
             <Stack direction={"row"} width={'100%'} alignItems={"center"} justifyContent={"end"}>
-                <IconButton>
+                <IconButton
+                    sx={{
+                        width: 32,
+                        height: 32,
+                        borderRadius: 2,
+                        color: 'text.secondary',
+                        "& .MuiTouchRipple-root .MuiTouchRipple-child": {
+                            borderRadius: 2
+                        }
+                    }}
+                >
                     <MoreHorizRoundedIcon/>
                 </IconButton>
             </Stack>
