@@ -6,6 +6,7 @@ export const TodayView = () => {
     return (
         <Stack
             paddingX={4}
+            gap={1}
         >
             <Stack direction={"column"} justifyContent={"center"} alignItems={"start"} gap={.5}>
                 <Typography variant={"h5"} fontWeight={"bold"}>
