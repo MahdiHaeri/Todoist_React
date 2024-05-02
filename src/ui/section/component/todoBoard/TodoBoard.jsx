@@ -25,7 +25,7 @@ export const TodoBoard = () => {
             border={1}
             borderColor={'transparent'}
             sx={{
-                transition: '.3s all',
+                transition: '.3s border-color',
                 ...(isHovered &&
                     {
                         borderColor: 'divider',

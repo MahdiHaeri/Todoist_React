@@ -30,7 +30,8 @@ export const UpcomingTop = () => {
                 <Button
                     variant={"text"}
                     sx={{
-                        textTransform: 'none'
+                        textTransform: 'none',
+                        transition: '0s color'
                     }}
                     color={'inherit'}
                 >

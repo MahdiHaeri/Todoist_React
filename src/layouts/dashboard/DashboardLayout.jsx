@@ -26,7 +26,7 @@ export default function DashboardLayout({children}) {
             width={'100%'}
             height={'100%'}
             sx={{
-                paddingLeft: openNav ? `${NAV.WIDTH}px` : 0, transition: '.3s all',
+                paddingLeft: openNav ? `${NAV.WIDTH}px` : 0, transition: '.3s padding',
             }}
         >
             <NavDrawer openNav={openNav} onToggleDrawer={onToggleDrawer}/>

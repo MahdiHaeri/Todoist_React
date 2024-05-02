@@ -23,7 +23,7 @@ export const TodoCard = ({priority}) => {
     return (
         <Card
             sx={{
-                transition: '.3s all',
+                transition: '.3s border-color',
                 border: 1,
                 borderColor: 'divider',
                 borderRadius: 2.5,
@@ -69,7 +69,7 @@ export const TodoCard = ({priority}) => {
                 </Stack>
                 <IconButton
                     sx={{
-                        transition: '.3s all',
+                        transition: '.3s opacity',
                         width: 32,
                         height: 32,
                         borderRadius: 2,

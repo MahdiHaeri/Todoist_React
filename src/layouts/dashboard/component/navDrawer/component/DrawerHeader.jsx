@@ -21,7 +21,12 @@ export const DrawerHeader = ({openNav, onToggleDrawer}) => {
             <ProfileMenu anchorEl={anchorEl} open={open} onClose={handleClose}/>
             <Button
                 variant={"text"}
-                sx={{'&.MuiButton-text': {textTransform: 'none', padding: 1}}}
+                sx={{
+                    '&.MuiButton-text': {
+                        textTransform: 'none', padding: 1
+                    },
+                    transition: '0s color'
+                }}
                 color={'inherit'}
                 onClick={handleClick}
             >
