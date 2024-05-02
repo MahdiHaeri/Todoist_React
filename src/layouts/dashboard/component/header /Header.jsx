@@ -52,8 +52,8 @@ export const Header = ({openNav, onToggleDrawer}) => {
                     <IconButton
                         onClick={toggleDarkMode}
                         sx={{
-                            width: 32,
-                            height: 32,
+                            width: 40,
+                            height: 40,
                             borderRadius: 2,
                             color: 'text.secondary',
                             "& .MuiTouchRipple-root .MuiTouchRipple-child": {
@@ -67,8 +67,8 @@ export const Header = ({openNav, onToggleDrawer}) => {
                     <IconButton
                         onClick={toggleDarkMode}
                         sx={{
-                            width: 32,
-                            height: 32,
+                            width: 40,
+                            height: 40,
                             borderRadius: 2,
                             color: 'text.secondary',
                             "& .MuiTouchRipple-root .MuiTouchRipple-child": {
