@@ -6,7 +6,7 @@ import {ThemeContext} from "./hook/context/ThemeContext.jsx";
 import storage from "./util/storage.js";
 
 export const App = () => {
-    const [darkMode, setDarkMode] = useState(storage.get('darkMode') || false);
+    const [darkMode, setDarkMode] = useState(storage.get('darkMode') || true);
 
     const toggleDarkMode = () => {
         storage.set('darkMode', !darkMode);
