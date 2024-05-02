@@ -1,7 +1,7 @@
 import {RouterProvider} from "react-router-dom";
 import router from "./routes/sections.jsx";
 import ThemeProvider from "./theme/index.jsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {ThemeContext} from "./hook/context/ThemeContext.jsx";
 
 export const App = () => {

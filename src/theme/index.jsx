@@ -23,8 +23,7 @@ export default function ThemeProvider({children}) {
             // shadows: shadows(),
             // customShadows: customShadows(),
             // shape: { borderRadius: 8 },
-        }),
-        []
+        }), [darkMode]
     );
 
     const theme = createTheme(memoizedValue);
