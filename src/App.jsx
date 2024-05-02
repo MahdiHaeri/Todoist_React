@@ -1,13 +1,15 @@
 import {RouterProvider} from "react-router-dom";
 import router from "./routes/sections.jsx";
 import ThemeProvider from "./theme/index.jsx";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {ThemeContext} from "./hook/context/ThemeContext.jsx";
+import storage from "./util/storage.js";
 
 export const App = () => {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(storage.get('darkMode') || false);
 
     const toggleDarkMode = () => {
+        storage.set('darkMode', !darkMode);
         setDarkMode(!darkMode);
     }
 
